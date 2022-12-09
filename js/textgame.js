@@ -17,7 +17,7 @@ for (let i = 0; i < word.length; i++) {
 }
 
 while (remainingLetter > 0 && maximumTries > 0) {
-    let guess = prompt("Team for this Hangman is: Programming." + 
+    let guess = prompt(message + "Team for this Hangman is: Programming." + 
     "\n" + answerArray.join(" ") +
      "\nGuesses left:"+ "\n" + maximumTries + "\n" + 
      "Guess a letter, or click Cancel to stop playing.");
@@ -25,7 +25,7 @@ while (remainingLetter > 0 && maximumTries > 0) {
     if (guess === null) {
         break;
     } else if (guess.length !== 1) {
-        message = "Please enter a single letter.";
+        message = "Please enter a single letter. \n";
     } else {
         for (let j = 0; j < word.length; j++) {
             if (word[j] === guess) {
