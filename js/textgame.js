@@ -1,6 +1,5 @@
 const words = [
-    "coding","computer", "laptop",
-    "algorithm", "scripts", "syntax"
+    "javascript"
 ];
 
 let word = words[Math.floor(Math.random() * words.length)];
@@ -14,7 +13,9 @@ for (let i = 0; i < word.length; i++) {
 }
 
 while (remainingLetter > 0 && maximumTries > 0) {
-    let guess = prompt("\n" + answerArray.join(" ") + "\nGuesses left:"+ "\n" + maximumTries + "\n" + "Guess a letter, or click Cancel to stop playing.");
+    let guess = prompt("\n" + answerArray.join(" ") +
+     "\nGuesses left:"+ "\n" + maximumTries + "\n" + 
+     "Guess a letter, or click Cancel to stop playing.");
 
     if (guess === null) {
         break;
@@ -27,7 +28,6 @@ while (remainingLetter > 0 && maximumTries > 0) {
                 remainingLetter--;
                 message = "You typed " + guess.toLocaleUpperCase() + ". It's correct!\n";
                 maximumTries++;
-                break; 
             } else {
                 message = "You said " + guess.toLocaleUpperCase() + ". It's wrong!\n";
             }
@@ -35,7 +35,6 @@ while (remainingLetter > 0 && maximumTries > 0) {
     }
     maximumTries--;
 }
-
 
 if (remainingLetter === 0) {
     alert("You won!\nThe answer was " + word);
