@@ -1,5 +1,9 @@
 const words = [
-    "javascript"
+    "coding","computer", "laptop",
+    "algorithm", "scripts", "syntax",
+    "javascript", "argument", "arrays",
+    "functions", "loops", "statement",
+    "variable"
 ];
 
 let word = words[Math.floor(Math.random() * words.length)];
@@ -13,7 +17,8 @@ for (let i = 0; i < word.length; i++) {
 }
 
 while (remainingLetter > 0 && maximumTries > 0) {
-    let guess = prompt("\n" + answerArray.join(" ") +
+    let guess = prompt("Team for this Hangman is: Programming." + 
+    "\n" + answerArray.join(" ") +
      "\nGuesses left:"+ "\n" + maximumTries + "\n" + 
      "Guess a letter, or click Cancel to stop playing.");
 
