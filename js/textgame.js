@@ -5,17 +5,16 @@ const words = [
 
 let word = words[Math.floor(Math.random() * words.length)];
 let message = "\n"; 
-
+let remainingLetter = word.length;
+let maximumTries = 10;
 let answerArray = [];
+
 for (let i = 0; i < word.length; i++) {
     answerArray[i] = "_";
 }
 
-let remainingLetter = word.length;
-let maximumTries = 10;
-
 while (remainingLetter > 0 && maximumTries > 0) {
-    let guess = prompt(message + "\n" + answerArray.join(" ") + "\nGuesses left:"+ "\n" + maximumTries + "\n" + "Guess a letter, or click Cancel to stop playing.");
+    let guess = prompt("\n" + answerArray.join(" ") + "\nGuesses left:"+ "\n" + maximumTries + "\n" + "Guess a letter, or click Cancel to stop playing.");
 
     if (guess === null) {
         break;
@@ -39,9 +38,9 @@ while (remainingLetter > 0 && maximumTries > 0) {
 
 
 if (remainingLetter === 0) {
-    alert("Good job! The answer was " + word);
+    alert("You won!\nThe answer was " + word);
 } else if (maximumTries <= 0) {
-    alert("You lost!");
+    alert("You lost this time around, try again and beat the hangman!");
 } else {
-    alert("You canceled! Byebye!")
+    alert("You canceled the game, hope to see you come back!\n Have a nice day!")
 }
