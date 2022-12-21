@@ -37,11 +37,11 @@ while (remainingLetter > 0 && maximumTries > 0) {
                         answerArray[j] = guess; 
                         remainingLetter--;
                         message = "You typed " + guess.toLocaleUpperCase() + ". It's correct.\n";
-                    } else {
-                        message = "You said " +  guess.toLocaleUpperCase() + ". It's wrong!\n";
-                    }
+                    } 
                 }
                 maximumTries++;
+            } else {
+                message = "You said " +  guess.toLocaleUpperCase() + ". It's wrong!\n";
             }
             userEnteredLetters.push(guess);
             maximumTries--;
