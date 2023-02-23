@@ -1,5 +1,21 @@
 Hi Paola!
 
+-----------------------------------------
+
+Updated: 23.2.2022
+
+First up: apologies that it's been so long!
+
+I've looked at everything and all the issues have been fixed! Well done!
+
+The only issue I can find is that a user can enter a single non-letter - they can enter 1 or ! or a space as an example. BBut they can only enter it once, so it's not all bad!
+
+But since everything else works I'm happy to say you have earned a VG!
+
+ I know this one was frustrating for you - and you might have even scrubbed it from your memory by now! - but I'm glad to see that you worked through it and got a great result.
+
+ --------------------------------------------------------------------
+
 Nice work!
 
 Although you've ticked all the boxes there's some bugs in the logic that I'd like you to take a look at.
